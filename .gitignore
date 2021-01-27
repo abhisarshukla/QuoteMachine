@@ -2,6 +2,7 @@ node_modules
 .cache/
 .parcel-cache/
 dist/
+css/
 .env
 .DS_Store
 coverage/
