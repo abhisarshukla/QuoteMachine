@@ -3,11 +3,11 @@
   align-items: center;
   justify-content: space-around;
   font-size: 1.25rem;
+  height: 35px;
   background-color: teal; //$primary
 
   .navitem {
     position: relative;
-    height: 35px;
     padding: 5px 50px;
     background-color: teal; //$primary
     transition: background-color 250ms ease-in-out;

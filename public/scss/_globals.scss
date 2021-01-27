@@ -19,5 +19,10 @@ body {
 }
 
 a {
-  text-decoration: none;
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+h1 {
+  font-size: 1rem;
 }
