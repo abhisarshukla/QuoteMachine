@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 
 const App = () => {
   return (
-    <h1 className="bg-red-400">
+    <h1>
       Hello React!!
     </h1>
   );
