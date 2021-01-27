@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  font-size: 1.25rem;
   height: 35px;
   background-color: teal; //$primary
 
@@ -10,7 +9,10 @@
     position: relative;
     padding: 5px 50px;
     background-color: teal; //$primary
-    transition: background-color 250ms ease-in-out;
+    color: white; //$white
+    font-size: 1.25rem;
+    font-weight: 700;
+    transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
     cursor: pointer;
 
     &::after {
@@ -29,6 +31,7 @@
 
     &:hover {
       background-color: lighten(red, 35%); //$secondary
+      color: black;
       &::after {
         opacity: 100%;
       }
