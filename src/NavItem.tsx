@@ -4,10 +4,8 @@ interface IProps {
   innerHTML: string;
 }
 
-const NavItem: FunctionComponent<IProps> = ({innerHTML}) => {
-  return (
-    <span className="navitem">{innerHTML}</span>
-  );
+const NavItem: FunctionComponent<IProps> = ({ innerHTML }) => {
+  return <span className="navitem">{innerHTML}</span>;
 };
 
 export default NavItem;

@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from "react";
-import {Link} from "@reach/router";
+import { Link } from "@reach/router";
 import NavItem from "./NavItem";
 
 const NavBar: FunctionComponent = (props) => {

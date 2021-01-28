@@ -2,7 +2,7 @@
   "name": "quotemachine",
   "version": "1.0.0",
   "description": "",
-  "main": "src/App.js",
+  "main": "out/index.html",
   "scripts": {
     "clean": "rm -rf .cache/ dist/ .parcel-cache/",
     "start": "parcel serve ./public/index.html",

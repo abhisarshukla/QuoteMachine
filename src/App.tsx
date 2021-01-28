@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import {Router} from "@reach/router";
+import { Router } from "@reach/router";
 import NavBar from "./Navbar";
 import Home from "./Home";
 import Submit from "./Submit";
