@@ -8,9 +8,9 @@ import About from "./About";
 
 const App = () => {
   return (
-    <div>
+    <div className="fill">
       <NavBar />
-      <Router>
+      <Router className="flex f_column fill">
         <Home path="/" />
         <Submit path="submit" />
         <About path="about" />
