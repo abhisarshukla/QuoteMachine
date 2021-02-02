@@ -9,7 +9,7 @@ const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 
 module.exports = merge(common, {
   mode: "production",
-  target: "browserlist",
+  target: "browserslist",
   entry: {
     main: {
       import: "./src/App.tsx",
