@@ -1,4 +1,5 @@
 import React from "react";
+import "../public/scss/style.scss";
 import ReactDOM from "react-dom";
 import { Router } from "@reach/router";
 import NavBar from "./Navbar";

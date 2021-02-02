@@ -33,7 +33,7 @@
       background-color: lighten(red, 35%); //$secondary
       color: black;
       &::after {
-        opacity: 100%;
+        opacity: 1;
       }
     }
   }

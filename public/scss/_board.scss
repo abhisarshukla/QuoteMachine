@@ -1,0 +1,30 @@
+.board {
+  position: relative;
+  border: #333333 solid 2px;
+  border-radius: 5px;
+  top: 25%;
+  margin: auto;
+  height: 300px;
+  width: 800px;
+
+  .quote-box {
+    flex: 1 1 auto;
+  }
+
+  .author {
+    justify-content: flex-end;
+    & > p {
+      padding-right: 10px;
+    }
+  }
+
+  .controls {
+    border-top: #333333 solid 2px;
+    justify-content: space-between;
+    padding: 2px;
+
+    .lc-dash {
+      width: 50px;
+    }
+  }
+}
