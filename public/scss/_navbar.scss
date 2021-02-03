@@ -1,40 +1,12 @@
-.navbar {
+.header {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  height: 35px;
-  background-color: teal; //$primary
+  justify-content: center;
+  background-color: $clr-white-40;
+  height: 60px;
 
-  .navitem {
-    position: relative;
-    padding: 5px 50px;
-    background-color: teal; //$primary
-    color: white; //$white
-    font-size: 1.25rem;
-    font-weight: 700;
-    transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
-    cursor: pointer;
-
-    &::after {
-      content: "";
-      position: absolute;
-      display: block;
-      background-color: red; //$secondary
-      border-radius: 0 0 10px 10px;
-      height: 5px;
-      bottom: -5px;
-      right: 0;
-      left: 0;
-      opacity: 0;
-      transition: opacity 250ms ease-in-out;
-    }
-
-    &:hover {
-      background-color: lighten(red, 35%); //$secondary
-      color: black;
-      &::after {
-        opacity: 1;
-      }
-    }
+  &__text {
+    margin: 0;
+    font-size: 2.25rem;
   }
 }

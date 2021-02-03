@@ -10,10 +10,15 @@ html {
   box-sizing: inherit;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  color: $clr-text;
   margin: 0;
 }
 
@@ -22,17 +27,23 @@ a {
   text-decoration: inherit; /* no underline */
 }
 
-.flex {
+.main-app {
   display: flex;
-
-  .f_column {
-    flex-flow: column;
-  }
+  flex-flow: column;
+  height: inherit;
+  background: rgb(27, 250, 183);
+  background: linear-gradient(
+    45deg,
+    $clr-gradient--stop1 0%,
+    $clr-gradient--stop2 25%,
+    $clr-gradient--stop3 50%,
+    $clr-gradient--stop4 75%,
+    $clr-gradient--stop5 100%
+  );
+  background-size: 300%;
+  animation: bg-animation 20s infinite alternate;
 }
 
 #root {
-  height: 100%;
-  .fill {
-    height: inherit;
-  }
+  height: inherit;
 }

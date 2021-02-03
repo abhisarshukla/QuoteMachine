@@ -1,1 +1,15 @@
-$navbar_height: 35px;
+// Color Variables
+$clr-primary: #62f56c;
+$clr-white: #dfdfdf;
+$clr-white-40: hsla(0, 0%, 100%, 40%);
+$clr-secondary: #f281aa;
+$clr-text: #333333;
+$clr-background: #dfdfdf;
+$clr-gradient--stop1: #1bfab7;
+$clr-gradient--stop2: #30fa55;
+$clr-gradient--stop3: #f5f06f;
+$clr-gradient--stop4: #96d843;
+$clr-gradient--stop5: #f5fa3b;
+
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500&display=swap");
