@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ReactRefreshPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const DashboardPlugin = require("webpack-dashboard/plugin");
 const packageJson = require("./package.json");
 
 const vendors = Object.keys(packageJson.dependencies);
@@ -24,6 +25,7 @@ module.exports = merge(common, {
   },
   devtool: "inline-source-map",
   plugins: [
+    new DashboardPlugin(),
     new ReactRefreshPlugin(),
     new ForkTsCheckerWebpackPlugin(),
     new CleanWebpackPlugin({

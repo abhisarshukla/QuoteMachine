@@ -20,6 +20,7 @@ module.exports = merge(common, {
   output: {
     filename: "[name].[contenthash].bundle.js",
     path: path.resolve(__dirname, "dist"),
+    publicPath: "",
   },
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
@@ -49,7 +50,12 @@ module.exports = merge(common, {
       {
         test: /\.scss$/,
         include: path.resolve(__dirname, "public/scss"),
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "postcss-loader",
+          "sass-loader",
+        ],
       },
     ],
   },
