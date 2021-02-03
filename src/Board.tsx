@@ -14,24 +14,32 @@ const Board: FunctionComponent<IProp> = ({
   previousQuoteFunctionHandler,
 }) => {
   return (
-    <div className="flex f_column board">
-      <div className="quote-box">
-        <p id="quoteText">{quote}</p>
+    <div className="box">
+      <div className="box__quote">
+        <p id="quoteText" className="quote">
+          {quote}
+        </p>
+        <p className="author">{author ? `- ${author}` : `Anonymous`}</p>
       </div>
-      <div className="flex author">
-        <p>{author ? `- ${author}` : `Anonymous`}</p>
-      </div>
-      <div className="flex controls">
-        <button onClick={() => previousQuoteFunctionHandler()}>Prev</button>
+      <button
+        className="box__copy-btn"
+        id="copyBtn"
+        data-clipboard-target="#quoteText"
+        data-clipboard-action="copy"
+      ></button>
+      <div className="box__controls">
         <button
-          className="cbutton"
-          id="copyBtn"
-          data-clipboard-target="#quoteText"
-          data-clipboard-action="copy"
+          className="box__controls__btn"
+          onClick={() => previousQuoteFunctionHandler()}
         >
-          Copy
+          Prev
         </button>
-        <button onClick={() => nextQuoteFunctionHandler()}>Next</button>
+        <button
+          className="box__controls__btn"
+          onClick={() => nextQuoteFunctionHandler()}
+        >
+          Next
+        </button>
       </div>
     </div>
   );

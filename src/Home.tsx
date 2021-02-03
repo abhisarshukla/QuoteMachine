@@ -1,10 +1,9 @@
 import React, { FunctionComponent, useState } from "react";
-import { RouteComponentProps } from "@reach/router";
 import ClipboardJS from "clipboard";
 import Board from "./Board";
 import { getQuoteByID, getNumberOfQuotes } from "./quote";
 
-const Home: FunctionComponent<RouteComponentProps> = () => {
+const Home: FunctionComponent = () => {
   new ClipboardJS("#copyBtn");
   const [id, setID] = useState(0);
   const nextQuoteFunction = () => {
@@ -20,14 +19,12 @@ const Home: FunctionComponent<RouteComponentProps> = () => {
   const quoteAuthor = quote.author;
 
   return (
-    <div className="home">
-      <Board
-        quote={quoteText}
-        author={quoteAuthor}
-        nextQuoteFunctionHandler={nextQuoteFunction}
-        previousQuoteFunctionHandler={previousQuoteFunction}
-      />
-    </div>
+    <Board
+      quote={quoteText}
+      author={quoteAuthor}
+      nextQuoteFunctionHandler={nextQuoteFunction}
+      previousQuoteFunctionHandler={previousQuoteFunction}
+    />
   );
 };
 
